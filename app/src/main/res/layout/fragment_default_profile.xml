@@ -1,0 +1,253 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bitcode.hardik.profilemanager.Fragments.FragmentDefaultProfile">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDefaultProfileName"
+                    android:text="Profile Name"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:padding="8dp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edtTxtDefaultProfileName"
+                    android:padding="8dp"
+                    android:hint="Enter Profile Name"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#D3D3D3" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtViewDefaultMediaVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Media Volume"
+                    android:textSize="20sp"
+                    android:padding="16sp"
+                    android:textColor="#000000"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarDefaultMediaVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp"/>
+
+                <TextView
+                    android:id="@+id/txtViewDefaultAlarmVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Alarm Volume"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarDefaultAlarmVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp"/>
+
+                <TextView
+                    android:id="@+id/txtDefaultNotificationVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Notification"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarDefaultNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp"/>
+
+                <TextView
+                    android:id="@+id/txtViewDefaultRingVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Ring Volume"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarDefaultRingVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp" />
+
+                <TextView
+                    android:id="@+id/txtViewDefaultMessageVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20sp"
+                    android:text="Message Volume"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <SeekBar
+                    android:id="@+id/seekBarDefaultMessageVolume"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#D3D3D3" />
+
+                <TextView
+                    android:id="@+id/txtViewDefaultPhoneRingtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Phone Ringtone"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/txtViewDefaultNotificationRingtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Notification Ringtone"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/txtViewDefaultMessageRingtone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Message Ringtone"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+
+                <TextView
+                    android:id="@+id/txtViewDefaultWallpaper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Wallpaper"
+                    android:textSize="20sp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#D3D3D3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtViewDefaultVibrateOnCalls"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Vibrate on Calls"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_weight=".5"/>
+
+                <Switch
+                    android:id="@+id/switchDefaultVibrateForCalls"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtViewDefaultWifi"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="WiFi"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_weight=".5"/>
+
+
+                <Switch
+                    android:id="@+id/switchDefaultWifi"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtViewDefaultBluetooth"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:padding="16sp"
+                    android:text="Bluetooth"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:layout_weight=".5"
+                    />
+
+                <Switch
+                    android:id="@+id/switchDefaultBluetooth"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

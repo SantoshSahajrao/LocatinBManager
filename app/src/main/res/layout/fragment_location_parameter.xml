@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:id="@+id/parameterContainer"
+    tools:context="com.bitcode.hardik.profilemanager.Fragments.FragmentLocationParameter">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLocationName"
+                android:textSize="20sp"
+                android:text="Location Name"
+                android:padding="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Location Name:"
+                android:id="@+id/locationName"
+                android:padding="16dp"
+                android:layout_below="@+id/txtLocationName"
+                android:layout_weight="0.04" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtprofilelocation"
+                android:textSize="20sp"
+                android:text="Profiles"
+                android:padding="16dp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtprofilelocation"
+                android:id="@+id/spinnerProfiles"
+                android:padding="16dp">
+            </Spinner>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtradius"
+                android:textSize="20sp"
+                android:text="Radius in Meters"
+                android:padding="16dp"
+                />
+
+            <com.xw.repo.BubbleSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bubleSeekBar"
+                app:bsb_bubble_text_color="#FFFFFF"
+                app:bsb_second_track_color="#004D40"
+                app:bsb_track_color="#39796B"
+                app:bsb_bubble_color="#39796B"
+                app:bsb_max="500"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+                app:bsb_section_count="5"
+                app:bsb_show_section_text="true"
+                app:bsb_show_section_mark="true"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_thumb_text="true"
+                app:bsb_show_progress_in_float="false"
+                android:padding="16dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSeek"
+                android:paddingRight="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSaveLocation"
+                android:text="Save"
+                android:layout_weight=".5"
+                android:padding="16dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCancelLocation"
+                android:text="Cancel"
+                android:layout_weight=".5"
+                android:padding="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
